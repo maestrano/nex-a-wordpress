@@ -1,0 +1,9 @@
+{ "wordpress": {
+  	"dir": "/app/src",
+  	"runtime_dir": "/app/src_runtime",
+  	"version": "latest"
+  },
+  "run_list": [
+    "recipe[wordpress::default]"
+  ]
+}

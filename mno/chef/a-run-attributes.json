@@ -1,0 +1,14 @@
+{ "wordpress": {
+    "version": "latest",
+    "dir": "/app/src",
+    "db": {
+      "name": "wordpressdb",
+      "user": "wordpress",
+      "pass": "wordpresspassword",
+      "prefix": "wp_"
+    }
+  },
+  "run_list": [
+    "recipe[wordpress::configure]"
+  ]
+}
