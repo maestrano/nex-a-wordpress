@@ -2,6 +2,8 @@
 Nex! Wordpress Application
 ===============
 
+* Run MySQL container
+
     ````bash
     docker run -d \
     	--name wordpress-db \
@@ -10,9 +12,13 @@ Nex! Wordpress Application
     	mysql:5.5
     ````
 
+* Wait a bit for it to start
+
     ````bash
     sleep 2
     ````
+
+* Run Nex! Wordpress application container with a link to the MySQL container above
 
     ````bash
     docker run -p 49207:80 -d --privileged=true \
