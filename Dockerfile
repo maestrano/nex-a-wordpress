@@ -1,6 +1,6 @@
 # Maestrano Wordpress application
 
-FROM maestrano/s-phpmysql
+FROM maestrano/nex-s-phpmysql
 
 MAINTAINER Cesar Tonnoir <it@maestrano.com>
 
